@@ -1,0 +1,18 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "budget_transaction",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "transaction_date",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "transaction_on",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ]
+}

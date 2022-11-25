@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "449900042747",
+    "project_id": "budgetingapp-6c9df",
+    "storage_bucket": "budgetingapp-6c9df.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449900042747:android:22d6f78aa6ca401a9c135e",
+        "android_client_info": {
+          "package_name": "com.das.budgetingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449900042747-fda0vudiu0ov77m37904672usi8keqt3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.das.budgetingapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "449900042747-v4h2fqqdq08ipd7ir35s4efohj2guc78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCPD1cEjrpyux90fVX8Zn1auewApdiLZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449900042747-v4h2fqqdq08ipd7ir35s4efohj2guc78.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "449900042747-vga3961olpcd5re93edo9hsl3g6k956g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.das.budgetingapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
