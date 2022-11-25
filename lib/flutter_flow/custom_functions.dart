@@ -14,14 +14,20 @@ double getRemainingBudgetByDayInterval(
   double? remainingBudget,
   DateTime? endDate,
   int? dayInterval,
+  double? totalBudget,
 ) {
-  if (remainingBudget == null || endDate == null || dayInterval == null) {
+  if (remainingBudget == null ||
+      endDate == null ||
+      dayInterval == null ||
+      totalBudget == null) {
     return 0;
   } else {
     int dayRemaining =
         math.max(endDate.difference(DateTime.now()).inDays, 0) + 1;
-    return (remainingBudget /
+    double totalSpend = totalBudget - remainingBudget;
+    double budget = (totalBudget /
         (dayRemaining.toDouble() / dayInterval.toDouble()).ceil());
+    return math.max(0, budget - totalSpend);
   }
 }
 

@@ -327,7 +327,8 @@ class _AdjustBudgetWidgetState extends State<AdjustBudgetWidget> {
                                     datePicked != null
                                         ? datePicked
                                         : widget.currentBudget!.endDate,
-                                    1),
+                                    1,
+                                    widget.currentBudget!.budgetAmount),
                             endDate: datePicked != null
                                 ? datePicked
                                 : widget.currentBudget!.endDate,
@@ -337,7 +338,8 @@ class _AdjustBudgetWidgetState extends State<AdjustBudgetWidget> {
                                     datePicked != null
                                         ? datePicked
                                         : widget.currentBudget!.endDate,
-                                    7),
+                                    7,
+                                    widget.currentBudget!.budgetAmount),
                           );
                           await widget.currentBudget!.reference
                               .update(budgetUpdateData);

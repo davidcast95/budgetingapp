@@ -452,7 +452,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                 clipBehavior: Clip.none,
                                                 children: [
                                                   Container(
-                                                    width: 100,
+                                                    width: 140,
                                                     decoration: BoxDecoration(
                                                       color: FlutterFlowTheme
                                                               .of(context)
@@ -594,7 +594,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                 clipBehavior: Clip.none,
                                                 children: [
                                                   Container(
-                                                    width: 100,
+                                                    width: 140,
                                                     decoration: BoxDecoration(
                                                       color: FlutterFlowTheme
                                                               .of(context)
@@ -608,17 +608,9 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                               .start,
                                                       children: [
                                                         Text(
-                                                          formatNumber(
-                                                            columnBudgetRecord
-                                                                .totalTransactionCount!,
-                                                            formatType:
-                                                                FormatType
-                                                                    .decimal,
-                                                            decimalType:
-                                                                DecimalType
-                                                                    .commaDecimal,
-                                                            currency: 'Rp ',
-                                                          ),
+                                                          columnBudgetRecord
+                                                              .totalTransactionCount!
+                                                              .toString(),
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .title3
@@ -1180,7 +1172,9 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                           .amount),
                                                                   columnBudgetRecord
                                                                       .endDate,
-                                                                  1),
+                                                                  1,
+                                                                  columnBudgetRecord
+                                                                      .budgetAmount),
                                                               weeklyBudgetRemaining: functions.getRemainingBudgetByDayInterval(
                                                                   functions.getDoubleSum(
                                                                       columnBudgetRecord
@@ -1189,7 +1183,9 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                           .amount),
                                                                   columnBudgetRecord
                                                                       .endDate,
-                                                                  7),
+                                                                  7,
+                                                                  columnBudgetRecord
+                                                                      .budgetAmount),
                                                             ),
                                                             'total_transaction_amount':
                                                                 FieldValue.increment(

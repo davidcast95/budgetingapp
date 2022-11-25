@@ -336,12 +336,14 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget> {
                                   functions.getRemainingBudgetByDayInterval(
                                       double.parse(amountController!.text),
                                       datePicked,
-                                      1),
+                                      1,
+                                      double.parse(amountController!.text)),
                               weeklyBudgetRemaining:
                                   functions.getRemainingBudgetByDayInterval(
                                       double.parse(amountController!.text),
                                       datePicked,
-                                      7),
+                                      7,
+                                      double.parse(amountController!.text)),
                               startDate: getCurrentTimestamp,
                             );
                             var budgetRecordReference =

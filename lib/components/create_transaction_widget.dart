@@ -266,7 +266,8 @@ class _CreateTransactionWidgetState extends State<CreateTransactionWidget> {
                                               double.parse(
                                                   amountController!.text)),
                                           containerBudgetRecord.endDate,
-                                          1),
+                                          1,
+                                          containerBudgetRecord.budgetAmount),
                                   weeklyBudgetRemaining:
                                       functions.getRemainingBudgetByDayInterval(
                                           functions.getDoubleSubstract(
@@ -275,7 +276,8 @@ class _CreateTransactionWidgetState extends State<CreateTransactionWidget> {
                                               double.parse(
                                                   amountController!.text)),
                                           containerBudgetRecord.endDate,
-                                          7),
+                                          7,
+                                          containerBudgetRecord.budgetAmount),
                                 ),
                                 'total_transaction_amount':
                                     FieldValue.increment(
