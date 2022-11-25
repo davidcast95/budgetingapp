@@ -196,9 +196,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                   AuthUserStreamWidget(
                     child: Container(
                       width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondaryBackground,
-                      ),
+                      decoration: BoxDecoration(),
                       child: StreamBuilder<BudgetRecord>(
                         stream: BudgetRecord.getDocument(
                             currentUserDocument!.defaultBudget!),
