@@ -31,6 +31,7 @@ class _CreateTransactionWidgetState extends State<CreateTransactionWidget> {
     super.initState();
     amountController = TextEditingController();
     descriptionController = TextEditingController();
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

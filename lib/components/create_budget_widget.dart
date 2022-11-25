@@ -28,6 +28,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget> {
     super.initState();
     amountController = TextEditingController();
     budgetNameController = TextEditingController();
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

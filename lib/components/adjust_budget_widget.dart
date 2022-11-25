@@ -34,6 +34,7 @@ class _AdjustBudgetWidgetState extends State<AdjustBudgetWidget> {
         text: widget.currentBudget!.budgetRemaining?.toString());
     budgetNameController =
         TextEditingController(text: widget.currentBudget!.budgetName);
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -218,7 +219,7 @@ class _AdjustBudgetWidgetState extends State<AdjustBudgetWidget> {
                                   child: Text(
                                     valueOrDefault<String>(
                                       datePicked != null
-                                          ? datePicked?.toString()
+                                          ? dateTimeFormat('yMMMd', datePicked)
                                           : dateTimeFormat('yMMMd',
                                               widget.currentBudget!.endDate),
                                       'not set',

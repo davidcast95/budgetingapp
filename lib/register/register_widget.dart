@@ -33,6 +33,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
     emailAddressController = TextEditingController();
     passwordLoginController = TextEditingController();
     passwordLoginVisibility = false;
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
