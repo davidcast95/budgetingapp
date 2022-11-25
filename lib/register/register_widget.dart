@@ -92,7 +92,6 @@ class _RegisterWidgetState extends State<RegisterWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(24, 4, 24, 6),
               child: Container(
                 width: double.infinity,
-                height: 60,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   boxShadow: [
@@ -159,7 +158,6 @@ class _RegisterWidgetState extends State<RegisterWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(24, 4, 24, 0),
               child: Container(
                 width: double.infinity,
-                height: 60,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   boxShadow: [
@@ -226,7 +224,6 @@ class _RegisterWidgetState extends State<RegisterWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 0),
               child: Container(
                 width: double.infinity,
-                height: 60,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   boxShadow: [
@@ -306,7 +303,6 @@ class _RegisterWidgetState extends State<RegisterWidget> {
               padding: EdgeInsetsDirectional.fromSTEB(24, 12, 24, 0),
               child: Container(
                 width: double.infinity,
-                height: 60,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   boxShadow: [
