@@ -59,12 +59,49 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     Expanded(
-                      child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(24, 0, 0, 0),
-                        child: Text(
-                          'Hi, Welcome ',
-                          style: FlutterFlowTheme.of(context).title1,
-                        ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(24, 0, 0, 0),
+                            child: Text(
+                              'Hi, Welcome ',
+                              style: FlutterFlowTheme.of(context).title1,
+                            ),
+                          ),
+                          Padding(
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(24, 0, 0, 0),
+                            child: InkWell(
+                              onTap: () async {
+                                GoRouter.of(context).prepareAuthEvent();
+                                await signOut();
+
+                                context.goNamedAuth('LoginPage', mounted);
+                              },
+                              child: Container(
+                                width: 100,
+                                height: 30,
+                                decoration: BoxDecoration(),
+                                child: Align(
+                                  alignment: AlignmentDirectional(-1, -1),
+                                  child: Text(
+                                    'Logout',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Poppins',
+                                          color: FlutterFlowTheme.of(context)
+                                              .alternate,
+                                        ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     if (Theme.of(context).brightness == Brightness.light)
