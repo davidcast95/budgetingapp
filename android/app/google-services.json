@@ -39,10 +39,54 @@
               "client_type": 3
             },
             {
-              "client_id": "449900042747-vga3961olpcd5re93edo9hsl3g6k956g.apps.googleusercontent.com",
+              "client_id": "449900042747-da53c2u7qdqpm91mfarjlcj9nmlvjf8h.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.das.budgetingapp"
+                "bundle_id": "com.das.monnybudgeting"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449900042747:android:ee20f1c9ba04869a9c135e",
+        "android_client_info": {
+          "package_name": "com.das.monnybudgeting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449900042747-9cqfd3tetb475k6ubajh18rjckcvt00o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.das.monnybudgeting",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "449900042747-v4h2fqqdq08ipd7ir35s4efohj2guc78.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCPD1cEjrpyux90fVX8Zn1auewApdiLZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449900042747-v4h2fqqdq08ipd7ir35s4efohj2guc78.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "449900042747-da53c2u7qdqpm91mfarjlcj9nmlvjf8h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.das.monnybudgeting"
               }
             }
           ]

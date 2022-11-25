@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>BudgetingApp</string>
+	<string>Monny</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>BudgetingApp</string>
+	<string>Monny</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 
@@ -28,7 +28,7 @@
             <string>Editor</string>
             <key>CFBundleURLSchemes</key>
             <array>
-                <string>com.googleusercontent.apps.449900042747-vga3961olpcd5re93edo9hsl3g6k956g</string>
+                <string>com.googleusercontent.apps.449900042747-da53c2u7qdqpm91mfarjlcj9nmlvjf8h</string>
                 
             </array>
         </dict>
@@ -37,10 +37,10 @@
         <key>CFBundleTypeRole</key>
         <string>Editor</string>
         <key>CFBundleURLName</key>
-        <string>budgetingapp.com</string>
+        <string>monny.com</string>
         <key>CFBundleURLSchemes</key>
         <array>
-        <string>budgetingapp</string>
+        <string>monny</string>
         </array>
         </dict>
     </array>

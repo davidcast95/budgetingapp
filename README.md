@@ -1,4 +1,4 @@
-# BudgetingApp
+# Monny
 
 A new Flutter project.
 

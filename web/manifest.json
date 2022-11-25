@@ -1,6 +1,6 @@
 {
-    "name": "BudgetingApp",
-    "short_name": "BudgetingApp",
+    "name": "Monny",
+    "short_name": "Monny",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -55,3 +55,14 @@ double getPercentageBarBudget(BudgetRecord? budget) {
     return (1 - (remainingDays.toDouble() / totalDays.toDouble()));
   }
 }
+
+double getDoubleSum(
+  double? valueA,
+  double? valueB,
+) {
+  if (valueA == null || valueB == null) {
+    return 0;
+  } else {
+    return valueA + valueB;
+  }
+}

@@ -1,4 +1,4 @@
-package com.das.budgetingapp
+package com.das.monnybudgeting
 
 import io.flutter.embedding.android.FlutterActivity
 
