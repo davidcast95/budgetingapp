@@ -1138,7 +1138,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           .update(
                                                               budgetUpdateData);
                                                       await listViewBudgetTransactionRecord
-                                                          .budget!
+                                                          .reference
                                                           .delete();
                                                       setState(() =>
                                                           _firestoreRequestCompleter =
