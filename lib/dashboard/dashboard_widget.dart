@@ -199,7 +199,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(0, 6, 0, 0),
+                                                  .fromSTEB(0, 12, 0, 0),
                                               child: Container(
                                                 width: double.infinity,
                                                 decoration: BoxDecoration(
@@ -236,12 +236,18 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                           Radius.circular(8),
                                                       padding: EdgeInsets.zero,
                                                     ),
-                                                    Text(
-                                                      '${dateTimeFormat('yMMMd', containerBudgetRecord.endDate)} (${functions.getRemainingDays(containerBudgetRecord.endDate).toString()})',
-                                                      style:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .bodyText1,
+                                                    Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0, 4, 0, 0),
+                                                      child: Text(
+                                                        '${dateTimeFormat('yMMMd', containerBudgetRecord.endDate)} (${functions.getRemainingDays(containerBudgetRecord.endDate).toString()})',
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyText1,
+                                                      ),
                                                     ),
                                                     Text(
                                                       'Remaining Days',
