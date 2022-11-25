@@ -417,7 +417,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                       .doc(user.uid)
                       .update(usersCreateData);
 
-                  context.goNamedAuth('Dashboard', mounted);
+                  context.goNamedAuth('LoadingUser', mounted);
                 },
                 text: 'Signup',
                 options: FFButtonOptions(

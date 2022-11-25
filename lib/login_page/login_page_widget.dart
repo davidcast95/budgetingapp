@@ -240,7 +240,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     return;
                   }
 
-                  context.goNamedAuth('Dashboard', mounted);
+                  context.goNamedAuth('LoadingUser', mounted);
                 },
                 text: 'Login',
                 options: FFButtonOptions(
