@@ -89,6 +89,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'Dashboard',
               path: 'dashboard',
+              requireAuth: true,
               builder: (context, params) => DashboardWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
