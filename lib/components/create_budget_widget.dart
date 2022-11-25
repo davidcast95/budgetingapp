@@ -1,12 +1,12 @@
 import '../auth/auth_util.dart';
 import '../backend/backend.dart';
+import '../components/pick_date_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
 import '../flutter_flow/custom_functions.dart' as functions;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class CreateBudgetWidget extends StatefulWidget {
@@ -181,15 +181,24 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
                           child: InkWell(
                             onTap: () async {
-                              await DatePicker.showDatePicker(
-                                context,
-                                showTitleActions: true,
-                                onConfirm: (date) {
-                                  setState(() => datePicked = date);
+                              await showModalBottomSheet(
+                                isScrollControlled: true,
+                                backgroundColor: FlutterFlowTheme.of(context)
+                                    .primaryBackground,
+                                context: context,
+                                builder: (context) {
+                                  return Padding(
+                                    padding: MediaQuery.of(context).viewInsets,
+                                    child: Container(
+                                      height: 600,
+                                      child: PickDateWidget(),
+                                    ),
+                                  );
                                 },
-                                currentTime: getCurrentTimestamp,
-                                minTime: getCurrentTimestamp,
-                              );
+                              ).then((value) =>
+                                  setState(() => datePicked = value));
+
+                              setState(() {});
                             },
                             child: Container(
                               width: 100,
